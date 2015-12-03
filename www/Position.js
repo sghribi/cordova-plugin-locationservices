@@ -28,6 +28,7 @@ var Position = function(coords, timestamp) {
     this.coords = new Coordinates();
   }
   this.timestamp = (timestamp !== undefined) ? timestamp : new Date();
+  this.realtimeNanos = (realtimeNanos !== undefined) ? realtimeNanos : null;
 };
 
 module.exports = Position;
