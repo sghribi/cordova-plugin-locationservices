@@ -230,6 +230,7 @@ public class CordovaLocationServices extends CordovaPlugin implements
                             : null) : null));
             o.put("velocity", loc.getSpeed());
             o.put("timestamp", loc.getTime());
+            o.put("realtimeNanos", loc.getElapsedRealtimeNanos()); // @see : https://developer.android.com/reference/android/location/Location.html
         } catch (JSONException e) {
             e.printStackTrace();
         }
